@@ -1,9 +1,9 @@
 {
-  "name": "react-form",
+  "name": "react-lessons",
   "version": "1.0.0",
-  "description": "",
+  "description": "React training tutorials by Ahmed Murtaza",
   "keywords": [],
-  "main": "src/index.js",
+  "main": "scripts/index.js",
   "dependencies": {
     "react": "16.2.0",
     "react-dom": "16.2.0",
