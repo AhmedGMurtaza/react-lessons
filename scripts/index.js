@@ -1,30 +1,7 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
+import ReactForm from './1-React-form';
 
-class ReactForm extends Component{
-  state = {}
-  onFormSubmit = () => {
+const App = () => <ReactForm />
 
-  }
-  render(){
-    return(
-      <form
-        onSubmit={this.onFormSubmit}>
-        <label for="first-name">
-          <input
-            name="firstName"
-            defaultValue="Muhammad Ahmed"
-          />
-        </label>
-        <label for="sur-name">
-          <input
-            name="surName"
-            defaultValue="Ghulam Murtaza"
-          />
-        </label>
-      </form>
-    );
-  }
-}
-
-render(<ReactForm />, document.getElementById("root"));
+render(<App />, document.getElementById("root"));
