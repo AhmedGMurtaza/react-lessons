@@ -1,7 +1,7 @@
 {
   "name": "react-lessons",
   "version": "1.0.0",
-  "description": "React training tutorials by Ahmed Murtaza",
+  "description": "React Forms",
   "keywords": [],
   "main": "scripts/index.js",
   "dependencies": {
