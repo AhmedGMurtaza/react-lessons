@@ -1,33 +1,36 @@
-import React, { Component } from 'react';
-import { render } from 'react-dom';
-import ReactForm from './1-React-form';
+import React, { Component } from "react";
+import { render } from "react-dom";
+// Forms
+import ReactForm from "./1-React-forms";
+// HOC
+import ReactHOC from "./2-higher-order-components";
 
-// const tableStyles = {
-//   border:'1px solid red',
-//   padding:'5px',
-//   fontFamily:'verdana',
-//   fontSize:'14px',
-//   textAlign:'left'
-// }
+class App extends Component{
+  state = { currentLink: 0 }
+  changeLink = () => {
 
-const App = () => {
-  return(
-    <ReactForm />
-    // <table style={tableStyles}>
-    //   <thead>
-    //     <tr>
-    //       <th>Topics</th>
-    //       <th>Examples</th>
-    //     </tr>      
-    //   </thead>
-    //   <tbody>
-    //     <tr>
-    //       <td>Forms</td>
-    //       <td><a href="" style={{color:'green'}}>Click this Link</a></td>
-    //     </tr>
-    //   </tbody>
-    // </table>
-  );
-}
+  }
+  render(){
+    return (
+      <ReactForm />
+      // <table>
+      //   <thead>
+      //     <tr>
+      //       <th>Topics</th>
+      //       <th>Examples</th>
+      //     </tr>
+      //   </thead>
+      //   <tbody>
+      //     <tr>
+      //       <td>Forms</td>
+      //       <td><button onClick={()=>this.changeLink}style={{color:'green'}}>Click this Link</a></td>
+      //     </tr>
+      //   </tbody>
+      // </table>
+    );
+  }
+};
 
-render(<App />, document.getElementById("root"));
+render(
+  <App />
+  , document.getElementById("root"));
