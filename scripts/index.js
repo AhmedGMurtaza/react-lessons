@@ -4,33 +4,35 @@ import { render } from "react-dom";
 import ReactForm from "./1-React-forms";
 // HOC
 import ReactHOC from "./2-higher-order-components";
+//Render Props
+import App from './3-Render-props';
 
-class App extends Component{
-  state = { currentLink: 0 }
-  changeLink = () => {
+// class App extends Component{
+//   state = { currentLink: 0 }
+//   changeLink = () => {
 
-  }
-  render(){
-    return (
-      <ReactForm />
-      // <table>
-      //   <thead>
-      //     <tr>
-      //       <th>Topics</th>
-      //       <th>Examples</th>
-      //     </tr>
-      //   </thead>
-      //   <tbody>
-      //     <tr>
-      //       <td>Forms</td>
-      //       <td><button onClick={()=>this.changeLink}style={{color:'green'}}>Click this Link</a></td>
-      //     </tr>
-      //   </tbody>
-      // </table>
-    );
-  }
-};
+//   }
+//   render(){
+//     return (
+//       <ReactForm />
+//       // <table>
+//       //   <thead>
+//       //     <tr>
+//       //       <th>Topics</th>
+//       //       <th>Examples</th>
+//       //     </tr>
+//       //   </thead>
+//       //   <tbody>
+//       //     <tr>
+//       //       <td>Forms</td>
+//       //       <td><button onClick={()=>this.changeLink}style={{color:'green'}}>Click this Link</a></td>
+//       //     </tr>
+//       //   </tbody>
+//       // </table>
+//     );
+//   }
+// };
 
 render(
-  <App />
+  <ReactHOC />
   , document.getElementById("root"));
