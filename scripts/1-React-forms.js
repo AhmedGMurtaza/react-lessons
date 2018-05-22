@@ -4,21 +4,21 @@ import "../styles.css";
 
 class ReactForm extends Component {
   state = {
-    firstName: "Muhammad Ahmed",
-    surName: "Ghulam Murtaza",
+    surname: "G.Murtaza",
+    firstName: "M.Ahmed",
     message: "helloworld from React!"
   };
   onFormSubmit = event => {
-    const { firstName, surName, message } = event.target;
+    const { firstName, surname, message } = event.target;
     event.preventDefault();
     this.setState({
+      surname: surname.value,
       firstName: firstName.value,
-      surName: surName.value,
       message: message.value
     });
   };
   render() {
-    const { firstName, surName, message } = this.state;
+    const { firstName, surname, message } = this.state;
     return (
       <div>
         <form onSubmit={this.onFormSubmit}>
@@ -26,7 +26,7 @@ class ReactForm extends Component {
             <input name="firstName" defaultValue={firstName} />
           </label>
           <label htmlFor="sur-name">
-            <input name="surName" defaultValue={surName} />
+            <input name="surname" defaultValue={surname} />
           </label>
           <textarea
             name="message"
@@ -38,15 +38,21 @@ class ReactForm extends Component {
         <table>
           <tbody>
             <tr>
-              <td><b>First Name</b></td>
+              <td>
+                <b>First Name</b>
+              </td>
               <td>{firstName}</td>
             </tr>
             <tr>
-              <td><b>Sur Name</b></td>
-              <td>{surName}</td>
+              <td>
+                <b>Sur Name</b>
+              </td>
+              <td>{surname}</td>
             </tr>
             <tr>
-              <td><b>Message</b></td>
+              <td>
+                <b>Message</b>
+              </td>
               <td>{message}</td>
             </tr>
           </tbody>

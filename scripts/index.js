@@ -1,11 +1,15 @@
 import React, { Component } from "react";
 import { render } from "react-dom";
+
 // Forms
 import ReactForm from "./1-React-forms";
 // HOC
 import ReactHOC from "./2-higher-order-components";
 //Render Props
-import App from './3-Render-props';
+import RenderProps from './3-Render-props';
+//Animations
+import Animation from './4-Animation';
+
 
 // class App extends Component{
 //   state = { currentLink: 0 }
@@ -34,5 +38,5 @@ import App from './3-Render-props';
 // };
 
 render(
-  <ReactHOC />
+  <Animation />
   , document.getElementById("root"));
